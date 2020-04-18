@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Yeseva+One&display=swap");
+
+:root {
+  --body-background: #f0f2f7;
+  --list-item-background: #9da4aa;
+  --primary-font: "Roboto", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+  --primary-font-color: #5b5e6e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-background);
+  font-family: var(--primary-font);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+header .logo {
+  width: 2rem;
+  height: auto;
+}
+
+header .header-title {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  height: 100%;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.todo_form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  position: relative;
+  height: 3rem;
+}
+
+#add_todo {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+}
+
+#todo_button {
+  padding: 0.7rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  list-style: none;
+  align-items: center;
+  color: var(--primary-font-color);
+  font-weight: 100;
+  background-color: white;
+}
+
+.disable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.delete {
+  cursor: pointer;
+  padding: 0.6rem;
+}
+
+.delete:hover {
+  opacity: 0.6;
+}
+
+.validation-error {
+  display: none;
+  background: lightsalmon;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+}

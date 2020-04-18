@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <img class="logo" src="/test/assets/todo-logo.svg" alt="" />
+        </div>
+        <div class="header-title">
+          <h1>My Tasks.</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="todo_form">
+        <!-- <label for="add_todo">Lisa uus</label> -->
+        <input type="text" name="add_todo" id="add_todo" />
+        <input type="submit" value="Lisa" id="todo_button" />
+        <p class="validation-error">See väli on vajalik.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="todo_list">
+        <ul class="todo_items"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
